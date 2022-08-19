@@ -75,7 +75,7 @@ client.on('ready', () => { //ready 이벤트를  받았을 때 실행
 
 
 });
-function show_error_service_stop(message) {
+async function show_error_service_stop(message) {
     var embed = await new Discord.RichEmbed()
     .setDescription("지원을 중단한 기능입니다.")
     .addField("지원을 중단한 기능입니다.", true)
@@ -228,7 +228,7 @@ client.on("guildMemberAdd", function (member) {
 
 
 // Log our bot in using the token from https://discordapp.com/developers/applications/me
-client.login(config.token);
+client.login(process.env.TOKEN);
 
 
 client.off
