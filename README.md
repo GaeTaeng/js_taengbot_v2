@@ -1,3 +1,5 @@
+#서비스 중단
+
 # js_TaengBot_Discord
 Heroku를 활용한 디스코드 봇 제작
 
